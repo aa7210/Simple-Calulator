@@ -43,6 +43,10 @@ def result():
         e.insert(0,f_num+int(sec_num))
     elif(calc=="subtract"):
         e.insert(0,f_num-int(sec_num))
+    elif(calc=="multiply"):
+        e.insert(0,f_num*int(sec_num))
+    elif(calc=="division"):
+        e.insert(0,f_num/int(sec_num))
 def clear():
     e.delete(0,END)
 button_1=Button(root,text="1",padx=40,pady=20,command=lambda: button_click(1))
